@@ -41,7 +41,7 @@
 
               <li class="nav-item">
                <i class="fas fa-shopping-bag"></i>
-               <a href="#popup" class="pbtn" style="color: rgb(255, 251, 244);"><i class="fas fa-user"></i></a>
+               <a href="#popup" class="pbtn" style="color: rgb(0, 0, 0);"><i class="fas fa-user"></i></a>
                
               </li>
 
@@ -75,7 +75,7 @@
                             <input type="name" placeholder="Fullname">
                             <input type="text" placeholder="studentNumber">
                             <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password" id="psswrd2" onkeyup="checkPassword(this.value)">
+                            <input type="password" placeholder="Password" id="psswrd2" class="Pword">
                             <span id="toggleBtn2"></span>
                             
                             <button class="form-submit">Sign Up</button>
@@ -96,12 +96,22 @@
                     <p style="font-weight:bold;">Enter your login information and Join The Experience</p>
                     <p style="font-weight:bold;">Your password should contain:</p>
                     <div class="validation">
-                              <ul>
-                                <li id="lower">At least one lowercase character</li>
-                                <li id="upper">At least one Uppercase character</li>
-                                <li id="number">At least one Number</li>
-                                <li id="special">At least one Speciall character</li>
-                                <li id="length">At least 8 characters</li>
+                              <ul class="require">
+                                <li>
+                                  <i class="fa-solid fa-circle"><span>At least one lowercase character</span></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-circle"><span>At least one Uppercase character</span></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-circle"><span>At least one Number</span></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-circle"><span>At least one Speciall character</span></i>
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-circle"><span>At least 8 characters</span></i>
+                                </li>
                               </ul>
                     </div>
                 </div>

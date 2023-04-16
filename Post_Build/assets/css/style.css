@@ -375,12 +375,14 @@ input:focus{
     right: 380px;
     width: 30px;
     height: 30px;
-    background: rgba(0,0,0,0.5);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.signin #toggleBtn:hover{
+    background: rgba(0,0,0,0.1);
 }
 .signin #toggleBtn::before{
     content: '\f06e';
@@ -391,16 +393,18 @@ input:focus{
 }
 .signup #toggleBtn2{
     position: absolute;
-    top: 292px;
+    top: 295px;
     right: 380px;
     width: 30px;
     height: 30px;
-    background: rgba(0,0,0,0.5);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.signup #toggleBtn2:hover{
+    background: rgba(0,0,0,0.1);
 }
 .signup #toggleBtn2::before{
     content: '\f06e';
@@ -476,21 +480,26 @@ input:focus{
     position: relative;
     list-style: none;
     color: #fff;
-    font-size: 0.85em;
+    font-size: 0.1em;
     transition: 0.5s;
 }
-.validation ul li .valid{
-    color: rgba(255, 255, 255, 0.5);
+.require li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.require li i{
+
+    font-size: 0.6rem;
+    color:#aaa ;
+    width: 300px;
+    gap: 3px;
+}
+.require li.valid{
+    font-size: 0.3rem;
+    color: #57f442;
 }
 
-.validation ul li::before{
-    content: '\f192';
-    height: 10px;
-    width: 20px;
-    font-family: fontAwesome;
-    display: inline;
-}
-.validation ul li .valid::before{
-    content: '\f00c';
-    color: #0f0;
+.require li.valid span{
+    color: #999;
 }
