@@ -63,6 +63,6 @@ passwordInput.addEventListener("keyup",(e) => {
         }else{
             requirementItem.firstElementChild.className="fa-solid fa-circle";
             requirementItem.classList.remove('valid');
-        }
+i        }
     });
 });
